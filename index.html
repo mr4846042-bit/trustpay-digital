@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Paycard Solution BD - Reloadable Virtual Visa & MasterCard">
+<title>Paycard Solution BD | Virtual Card</title>
+<style>
+:root{--bg:#050b24;--panel:#0a1740;--line:#164e9a;--cyan:#12d8ff;--purple:#8b35ff;--white:#f4f7ff;--muted:#c4d0ed;--green:#08b86a;--yellow:#ffdf28}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 12%,#092d76 0,transparent 28%),linear-gradient(145deg,#03081d,#07133a 58%,#080a27);color:var(--white);font-family:system-ui,-apple-system,"Noto Sans Bengali",Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#070d2bed;border-bottom:1px solid #1759a9;backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{font-size:1.25rem;font-weight:850;letter-spacing:.2px}.brand span{color:var(--cyan)}.brand small{display:block;color:#a9badc;font-size:.72rem;font-weight:500}
+nav{display:flex;gap:18px;align-items:center;font-size:.92rem}nav a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 18px;font-weight:800;cursor:pointer;color:white;background:linear-gradient(100deg,#164dff,#9b24ff);box-shadow:0 8px 24px #3614a344}.btn.green{background:linear-gradient(100deg,#00a95c,#05d18a)}.btn.outline{background:transparent;border:1px solid var(--cyan)}
+.hero{padding:58px 0 46px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px}.eyebrow{display:inline-block;background:#123a8b;border:1px solid #1d9cff;border-radius:100px;padding:5px 13px;color:#dffaff;font-weight:750;font-size:.85rem}
+h1{font-size:clamp(2rem,4.5vw,3.8rem);line-height:1.17;margin:18px 0}.gradient{background:linear-gradient(90deg,#2ce4ff,#ff8d43,#ff4c85);color:transparent;background-clip:text}.price{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:900;color:var(--yellow);margin:12px 0}.price small{display:block;font-size:.95rem;color:#fff}.intro{color:var(--muted);max-width:650px}.hero-art{border:1px solid #1e65d4;border-radius:26px;padding:26px;background:radial-gradient(circle at 50% 40%,#1056ba 0,#0b1a49 55%,#07102e 100%);box-shadow:0 0 45px #005dff30;text-align:center;min-height:300px;display:flex;flex-direction:column;justify-content:center}.cards{display:flex;justify-content:center;align-items:center;gap:0;margin:14px auto 24px}.card-art{width:210px;height:132px;border-radius:17px;padding:17px;text-align:left;background:linear-gradient(135deg,#0e77ff,#07164c 72%);border:1px solid #6bdcff;box-shadow:0 15px 35px #00aaff35;transform:rotate(-8deg);font-weight:800}.card-art.back{margin-left:-38px;background:linear-gradient(135deg,#3a4058,#080d20);border-color:#9aa5ca;transform:rotate(8deg) translateY(15px)}.chip{display:block;margin:14px 0;color:#ffe8a0}.section{padding:28px 0}.section h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.tile,.feature,.orderbox,.contactbox{background:linear-gradient(135deg,#0b1d4a,#07122f);border:1px solid #164b91;border-radius:15px;padding:17px}.tile{display:flex;align-items:center;gap:12px;color:#eaf2ff}.emoji{font-size:1.5rem;flex-shrink:0}.feature-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.feature{text-align:center}.feature strong{display:block;color:var(--cyan);font-size:1.05rem}.order-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;align-items:stretch}.contactbox{display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 15% 20%,#103b83,#07122f 65%)}.contactbox h2{margin-bottom:8px}.paynumber{display:inline-block;background:var(--yellow);color:#10172d;font-weight:900;border-radius:9px;padding:5px 12px;font-size:1.25rem;margin:8px 0}.orderbox h2{font-size:1.55rem}.field{margin:13px 0}.field label{display:block;margin-bottom:6px;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #2a5899;border-radius:10px;background:#050d27;color:white;padding:13px;font:inherit}.field input:focus,.field select:focus{outline:2px solid var(--cyan)}.hint{font-size:.88rem;color:var(--muted)}.full{width:100%;margin-top:8px}.notice{border-left:3px solid var(--yellow);padding:9px 12px;background:#172246;color:#f6edc7;border-radius:5px;font-size:.9rem}.status{margin-top:12px;color:#a8ffd3;white-space:pre-wrap}.footer{margin-top:30px;border-top:1px solid #163d7a;padding:25px 0;color:#aebfe1;font-size:.9rem}.footrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){nav{display:none}.hero,.order-layout{grid-template-columns:1fr}.hero{padding-top:35px}.grid{grid-template-columns:repeat(2,1fr)}.feature-row{grid-template-columns:repeat(2,1fr)}.hero-art{min-height:260px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.tile{padding:13px}.card-art{width:175px;height:118px;font-size:.85rem}.hero-art{padding:18px}.btn{padding:11px 13px}.nav{padding:11px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#home">◈ Paycard Solution <span>BD</span><small>Your Online Payment Partner</small></a><nav><a href="#home">হোম</a><a href="#services">সার্ভিসসমূহ</a><a href="#benefits">কার্ডের সুবিধা</a><a href="#order">অর্ডার করুন</a></nav><a class="btn green" href="https://wa.me/8801978365292" target="_blank" rel="noopener">☏ WhatsApp</a></div></header>
+<main>
+<section class="wrap hero" id="home"><div><span class="eyebrow">💳 International Virtual Card</span><h1>ইন্টারন্যাশনাল ডুয়েল কারেন্সি<br><span class="gradient">Visa &amp; MasterCard</span></h1><div class="price">🔥 মাত্র ৯৯ টাকায়! <small>(সাথে ১ ডলার ফ্রি)</small></div><p class="intro">ইন্টারন্যাশনাল পেমেন্ট, Facebook/YouTube Boost বা অনলাইন লেনদেন করতে সমস্যায় পড়ছেন? তাহলে নিতে পারেন আমাদের Reloadable Virtual Visa/MasterCard।</p><a class="btn green" href="https://wa.me/8801978365292" target="_blank" rel="noopener">☏ WhatsApp করুন</a> <a class="btn outline" href="#services">সার্ভিসসমূহ দেখুন ↓</a></div>
+<div class="hero-art"><div class="cards"><div class="card-art">◈ Paycard Solution BD<span class="chip">▦ ▦</span>•••• 7890<br><small>VISA</small></div><div class="card-art back">Paycard Solution BD<span class="chip">▦ ▦</span>•••• 3456<br><small>MasterCard</small></div></div><strong>🌐 Pay Anywhere, Anytime</strong><p class="hint">Reloadable Virtual Visa / MasterCard</p></div></section>
+<section class="wrap section" id="services"><h2>⭐ কার্ড দিয়ে যেসব কাজ করা যাবে:</h2><div class="grid">
+<div class="tile"><span class="emoji">💼</span><span>Fiverr, Upwork, Freelancerসহ বিভিন্ন অনলাইন প্ল্যাটফর্মে পেমেন্ট/লেনদেন</span></div>
+<div class="tile"><span class="emoji">📣</span><span>Facebook, Google, YouTube ও TikTok-এ Ads চালানো</span></div>
+<div class="tile"><span class="emoji">⭐</span><span>Facebook Stars কেনা</span></div>
+<div class="tile"><span class="emoji">🎮</span><span>বিভিন্ন Console Account-এর পেমেন্ট</span></div>
+<div class="tile"><span class="emoji">📱</span><span>Facebook Page ও অন্যান্য সোশ্যাল মিডিয়া প্রোমোট করা</span></div>
+<div class="tile"><span class="emoji">🌐</span><span>বিভিন্ন ওয়েবসাইটে অনলাইন পেমেন্ট</span></div>
+<div class="tile"><span class="emoji">🖥️</span><span>Domain ও Hosting কেনা</span></div>
+<div class="tile"><span class="emoji">🕹️</span><span>Free Fire / PUBG-সহ বিভিন্ন গেমে ইন-গেম পেমেন্ট</span></div>
+<div class="tile"><span class="emoji">▶️</span><span>Google Play Store থেকে অ্যাপ বা গেম কেনা</span></div>
+<div class="tile"><span class="emoji">🛡️</span><span>VPN / Proxy সার্ভিসের পেমেন্ট</span></div>
+<div class="tile"><span class="emoji">🎨</span><span>বিভিন্ন Theme ও Digital Service কেনা</span></div>
+<div class="tile"><span class="emoji">💳</span><span>Visa/MasterCard গ্রহণ করে এমন অন্যান্য অনলাইন সেবায় পেমেন্ট</span></div>
+</div></section>
+<section class="wrap section" id="benefits"><h2>🛡️ কার্ডের সুবিধা</h2><div class="feature-row"><div class="feature"><span class="emoji">📅</span><strong>মেয়াদ: ৫ বছর</strong></div><div class="feature"><span class="emoji">🔄</span><strong>Reloadable সুবিধা</strong></div><div class="feature"><span class="emoji">💸</span><strong>বিকাশ / নগদ / Binance-এর মাধ্যমে ডলার লোডের সুবিধা</strong></div><div class="feature"><span class="emoji">➕</span><strong>প্রয়োজন অনুযায়ী পুনরায় ব্যালেন্স যোগ করার সুবিধা</strong></div></div></section>
+<section class="wrap section order-layout" id="order"><div class="contactbox"><h2>📩 কার্ড নিতে বা বিস্তারিত জানতে এখনই WhatsApp করুন</h2><p>আপনার অনলাইন পেমেন্টকে আরও সহজ করতে আজই সংগ্রহ করুন আপনার Reloadable Virtual Visa/MasterCard।</p><a class="btn green" href="https://wa.me/8801978365292" target="_blank" rel="noopener">WhatsApp-এ যোগাযোগ করুন</a><p class="hint">WhatsApp নম্বর: +880 1978-365292</p></div>
+<form class="orderbox" id="orderForm"><h2>📝 অর্ডার করতে যা যা লাগবে</h2><div class="field"><label for="name">নাম *</label><input id="name" name="name" autocomplete="name" required placeholder="আপনার পূর্ণ নাম"></div><div class="field"><label for="email">জিমেইল *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="আপনার Gmail ঠিকানা"></div><div class="field"><label for="phone">ফোন নাম্বার *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="আপনার ফোন নম্বর"></div><div class="notice">এই নাম্বারে ৯৯ টাকা Send Money করুন:<br><span class="paynumber">01978365292</span><br>পেমেন্ট করার পর Transaction ID কপি করে নিচের ঘরে বসান।</div><div class="field"><label for="trx">Transaction ID *</label><input id="trx" name="trx" required maxlength="100" placeholder="আপনার Transaction ID লিখুন"><p class="hint">Submit চাপলে আপনার দেওয়া তথ্য WhatsApp-এ পাঠানোর জন্য একটি মেসেজ তৈরি হবে।</p></div><button class="btn full" type="submit">➤ অর্ডার Submit করুন</button><div id="status" class="status" role="status" aria-live="polite"></div></form></section>
+</main>
+<footer class="footer"><div class="wrap footrow"><div><strong>◈ Paycard Solution BD</strong><br>Your Online Payment Partner</div><div>🔒 নিরাপদ লেনদেন · ⚡ দ্রুত সার্ভিস · ☎ ২৪/৭ সাপোর্ট</div><div>© <span id="year"></span> Paycard Solution BD. All Rights Reserved.</div></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const trx=document.getElementById('trx').value.trim();
+  if(!name||!email||!phone||!trx){return;}
+  const message=`Paycard Solution BD - নতুন অর্ডার%0Aনাম: ${encodeURIComponent(name)}%0AGmail: ${encodeURIComponent(email)}%0Aফোন: ${encodeURIComponent(phone)}%0Aপরিমাণ: ৯৯ টাকা%0ATransaction ID: ${encodeURIComponent(trx)}`;
+  document.getElementById('status').textContent='WhatsApp খুলছে—মেসেজটি দেখে Send চাপুন। অর্ডার পাঠাতে WhatsApp-এ Send করা প্রয়োজন।';
+  window.open('https://wa.me/8801978365292?text='+message,'_blank','noopener');
+});
+</script>
+</body></html>
